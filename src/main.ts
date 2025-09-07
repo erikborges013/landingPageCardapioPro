@@ -1,8 +1,9 @@
 // Adicionamos um listener para garantir que o DOM está carregado
 document.addEventListener("DOMContentLoaded", () => {
+  //Inicia assim que carrega o dom
   // Função para criar a neve
   function createSnowfall(): void {
-    const numberOfSnowflakes: number = 150;
+    const numeroDeFlocosDeNeve: number = 150;
     const container: HTMLElement | null = document.body;
 
     if (!container) {
@@ -10,29 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    for (let i = 0; i < numberOfSnowflakes; i++) {
-      const snowflake: HTMLDivElement = document.createElement("div");
-      snowflake.classList.add("snowflake");
+    for (let i = 0; i < numeroDeFlocosDeNeve; i++) {
+      const flocoDeNeve: HTMLDivElement = document.createElement("div");
+      flocoDeNeve.classList.add("flocoDeNeve");
 
-      snowflake.style.left = Math.random() * 100 + "vw";
-
+      flocoDeNeve.style.left = Math.random() * 100 + "vw";
       const size: number = Math.random() * 5 + 2;
-      snowflake.style.width = `${size}px`;
-      snowflake.style.height = `${size}px`;
+      flocoDeNeve.style.width = `${size}px`;
+      flocoDeNeve.style.height = `${size}px`;
 
-      const duration: number = Math.random() * 10 + 5;
-      snowflake.style.animationDuration = `${duration}s`;
+      const duracao: number = Math.random() * 10 + 5;
+      flocoDeNeve.style.animationDuration = `${duracao}s`;
 
-      // ----- AQUI ESTÁ A MUDANÇA -----
-      // Geramos um delay negativo para que a animação já comece em andamento.
-      const delay: number = Math.random() * -15; // Usamos -15s (duração máxima)
-      snowflake.style.animationDelay = `${delay}s`;
-      // --------------------------------
+      const delay: number = Math.random() * -15;
+      flocoDeNeve.style.animationDelay = `${delay}s`;
 
-      container.appendChild(snowflake);
+      container.appendChild(flocoDeNeve);
     }
   }
 
-  // Inicia a função
-  createSnowfall();
+  createSnowfall(); //Por ultimo chamamos a função
+});
+
+const botaoCheckout = document.querySelector(
+  ".btn-teste-gratis"
+) as HTMLButtonElement;
+
+botaoCheckout.addEventListener("click", (evento) => {
+  evento.preventDefault();
+  window.location.href = "https://pay.kiwify.com.br/9ljIg14";
 });
