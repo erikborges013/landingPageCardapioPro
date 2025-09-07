@@ -41,3 +41,5 @@ botaoCheckout.addEventListener("click", (evento) => {
   evento.preventDefault();
   window.location.href = "https://pay.kiwify.com.br/9ljIg14";
 });
+
+console.log("teste");
