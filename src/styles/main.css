@@ -10,11 +10,11 @@
 }
 
 body {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .flocoDeNeve {
-  position: absolute;
+  position: fixed;
   background-color: white;
   border-radius: 50%;
   opacity: 0.8;
