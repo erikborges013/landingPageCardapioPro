@@ -39,7 +39,7 @@ const botaoCheckout = document.querySelector(
 
 botaoCheckout.addEventListener("click", (evento) => {
   evento.preventDefault();
-  window.location.href = "https://pay.kiwify.com.br/9ljIg14";
+  window.location.href = "https://app.monetizze.com.br/checkout/DZD358675";
 });
 
 console.log("teste");
