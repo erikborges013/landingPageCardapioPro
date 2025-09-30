@@ -11,6 +11,13 @@
 
 body {
   overflow: auto;
+  background-image: linear-gradient(
+    to top,
+    #14ffc4 0%,
+    #015b4f 30%,
+    #08241c 60%,
+    black 90%
+  );
 }
 
 .flocoDeNeve {
@@ -40,13 +47,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-    to top,
-    #14ffc4 0%,
-    #015b4f 30%,
-    #08241c 60%,
-    black 90%
-  );
+
   padding: 20px;
 }
 
@@ -58,7 +59,7 @@ body {
 }
 
 .titulo {
-  margin-top: 70px;
+  margin-top: 20px;
   text-align: center;
   color: #ffffff;
   font-family: var(--fonte-principal);
