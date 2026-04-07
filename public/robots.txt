@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://landingpagecardapiopro.vercel.app/sitemap.xml
+Sitemap: https://cardapioprodelivery.online/sitemap.xml
