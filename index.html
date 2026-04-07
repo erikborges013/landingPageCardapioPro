@@ -1,51 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/main.css" />
-    <title>CardápioPro Delivery</title>
-  </head>
-  <body>
-    <main>
-      <section class="sessao_apresentacao">
-        <div class="container_apresentacao">
-          <h1 class="titulo">
-            Transforme seu delivery com um cardápio digital moderno e interativo
-          </h1>
-          <h3 class="subtitulo">
-            Receba pedidos direto no WhatsApp, aumente suas vendas e diga adeus
-            às taxas abusivas de apps de delivery.
-          </h3>
-          <a class="botao-play">
-            <img
-              class="capa-video"
-              src="./src/assets/Gemini_Generated_Image_q6xjlzq6xjlzq6xj (2).png"
-              alt="imagem cardápio"
-            />
-          </a>
 
-          <iframe
-            class="video"
-            style="display: none"
-            width="180"
-            height="320"
-            src=""
-            title="YouTube Shorts player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sistema de Delivery Completo e Cardápio Digital Interativo. Gerencie pedidos do WhatsApp, controle estoque e imprima comandas por apenas R$ 20/mês. Comece grátis!" />
+  <meta name="keywords"
+    content="sistema de delivery completo, cardápio digital, delivery whatsapp, gerenciar pedidos restaurante, taxa de entrega por bairro" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css" />
+  <title>CardápioPró | Sistema de Delivery Completo e Cardápio Digital</title>
+</head>
 
-          <button class="btn-teste-gratis">Clique aqui</button>
-          <p class="paragrafo">
-            Assine e receba o acesso diretamente no seu e-mail
-          </p>
+<body>
+  <!-- Header/Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Cardápio<span>Pró</span></div>
+      <ul class="nav-links">
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#preços">Preços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#preços" class="btn btn-secondary">Entrar</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Controle Total do seu Delivery: <br>
+          <span>Do Pedido no WhatsApp à Impressão na Cozinha.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Gerencie pedidos em tempo real no PC ou Android, configure taxas por bairro e tenha seu cardápio digital
+          interativo. Comece grátis ou tenha acesso ilimitado por apenas <strong>R$ 20</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#preços" class="btn btn-primary btn-large">Criar Meu Cardápio Agora</a>
+          <p class="trust-badge">⚡ Setup em menos de 5 minutos</p>
         </div>
-      </section>
-    </main>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/mobile_menu.png" alt="Cardápio Digital Interativo no Celular" class="floating-img">
+      </div>
+    </section>
+
+    <!-- Panel Section (Destaque Operacional) -->
+    <section class="panel-showcase" id="painel">
+      <div class="container grid">
+        <div class="panel-image">
+          <img src="/assets/dashboard.png" alt="Painel Administrativo CardápioPró">
+        </div>
+        <div class="panel-text">
+          <h2 class="section-title">Muito mais que um link. Um <span>Gerenciador de Elite.</span></h2>
+          <p class="section-description">
+            Esqueça a bagunça do WhatsApp. Com o CardápioPró, você tem o controle operacional de um grande marketplace
+            por uma fração do preço.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <div class="icon">🔔</div>
+              <div><strong>Alertas em Tempo Real:</strong> Nunca mais perca um pedido com avisos sonoros e visuais
+                instantâneos.</div>
+            </li>
+            <li>
+              <div class="icon">🖨️</div>
+              <div><strong>Impressão de Comandas:</strong> Envie o pedido direto para a cozinha com um clique (PC ou
+                Android).</div>
+            </li>
+            <li>
+              <div class="icon">🚫</div>
+              <div><strong>Controle de Estoque:</strong> Ative ou desative produtos que acabaram em segundos.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de Funcionalidades -->
+    <section class="features" id="funcionalidades">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Tudo o que seu Delivery precisa para <span> escalar.</span></h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔗</div>
+            <h3>Link e QR Code</h3>
+            <p>Seu cardápio acessível por link na bio ou QR Code impresso nas mesas.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Gerador de PDF</h3>
+            <p>Gere versões em PDF do seu cardápio para envio rápido ou impressão.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Taxas por Bairro</h3>
+            <p>Cálculo automático de entrega conforme a localização do cliente.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Multi-plataforma</h3>
+            <p>Use no seu celular Android ou direto no navegador do seu computador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela de Preços -->
+    <section class="pricing" id="preços">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Escolha o plano para o seu <span>sucesso.</span></h2>
+        </div>
+        <div class="pricing-grid">
+          <!-- Plano Free -->
+          <div class="pricing-card">
+            <div class="plan-name">Plano Free</div>
+            <div class="plan-price">R$ 0<span>/mês</span></div>
+            <p class="plan-desc">Ideal para quem está começando.</p>
+            <ul class="plan-features">
+              <li>Até 15 produtos</li>
+              <li>5 adicionais por item</li>
+              <li>Até 10 categorias</li>
+              <li>Pedidos via WhatsApp e E-mail</li>
+              <li class="disabled">Sem Painel em Tempo Real</li>
+            </ul>
+            <div class="plan-actions">
+              <a href="https://play.google.com/store/apps/details?id=app.vercel.cardapiodigital.twa"
+                class="btn btn-outline btn-sm">
+                <span>🤖</span> Google Play
+              </a>
+              <a href="https://cardapiodigital.vercel.app/" class="btn btn-outline btn-sm">
+                <span>🌐</span> Sistema Web
+              </a>
+            </div>
+          </div>
+
+          <!-- Plano Plus -->
+          <div class="pricing-card featured">
+            <div class="badge">MAIS POPULAR</div>
+            <div class="plan-name">Plano Plus</div>
+            <div class="plan-price">R$ 20,00<span>/mês</span></div>
+            <p class="plan-desc">A ferramenta dos profissionais.</p>
+            <ul class="plan-features">
+              <li><strong>Produtos ILIMITADOS</strong></li>
+              <li><strong>Categorias ILIMITADAS</strong></li>
+              <li><strong>Adicionais ILIMITADOS</strong></li>
+              <li>Painel de Pedidos em Tempo Real</li>
+              <li>Impressão de Comandas</li>
+              <li>Gerador de Cardápio em PDF</li>
+              <li>Suporte 24/7 Prioritário</li>
+            </ul>
+            <div class="plan-actions">
+              <a href="https://play.google.com/store/apps/details?id=app.vercel.cardapiodigital.twa"
+                class="btn btn-primary">
+                <span>🤖</span> Android App (Plus)
+              </a>
+              <a href="https://cardapiodigital.vercel.app/" class="btn btn-secondary">
+                <span>🌐</span> Acessar via Web
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container narrow">
+        <h2 class="section-title text-center">Dúvidas <span>Frequentes</span></h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">O sistema funciona no celular e no computador?</button>
+            <div class="faq-answer">
+              <p>Sim! O CardápioPró é totalmente responsivo. Você pode gerenciar sua loja pelo aplicativo Android ou por
+                qualquer navegador no PC/Mac.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Como o cliente paga a taxa de entrega?</button>
+            <div class="faq-answer">
+              <p>O sistema calcula automaticamente a taxa baseada no bairro selecionado pelo cliente. O valor é somado
+                ao total do pedido que chega pronto para você no WhatsApp ou Painel.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">O que muda do plano gratuito para o Plus de R$ 20?</button>
+            <div class="faq-answer">
+              <p>O Plano Plus remove todos os limites de produtos e categorias, além de liberar o Painel em Tempo Real,
+                Impressão e o Gerador de PDF. É o investimento ideal para quem quer profissionalizar a operação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 CardápioPró Delivery. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
