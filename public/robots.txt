@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cardapioprodelivery.online/sitemap.xml
+Sitemap: https://www.cardapioprodelivery.online/sitemap.xml
